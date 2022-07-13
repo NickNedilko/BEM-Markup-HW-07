@@ -1,7 +1,4 @@
 
-
-
-
 :root{
      --primiry-text-color: #757575;
      --title-text-color: #212121;
@@ -21,17 +18,32 @@ ul{
     padding: 0;
     list-style: none;
 }
+img{
+    display: block;
+}
 .link{
     text-decoration: none;
 
 }
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 .container{
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid tomato;
+   
 }
 /* Стилизация шапки сайта */
 .header{
@@ -159,6 +171,221 @@ ul{
     border-radius: 4px;
 }
 
+/* Оформление секции требования */
+.demand{
+ padding-top: 94px;
+ padding-bottom: 94px;
+}
+
+.section-title{
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color);
+
+}
+.demand-list{
+    display: flex;
+}
+.demand-list__item{
+    width: 270px;
+    margin-right: 30px;
+}
+.margin-list__item:last-child{
+    margin-right: 0;
+}
+.demand-list__inner{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    
+}
+.demand-list__icon{
+    width: 65px;
+    height: 70px;
+}
+.demand-list__title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+
+    color: var(--title-text-color);
+
+}
+.demand-list__description{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    text-align: left;
+
+}
+
+/* Стилизация секции чем мы занимаемся */
+.specialization{
+    padding-bottom: 94px;
+}
+.specialization-list{
+    display: flex;
+}
+.specialization-list__item{
+    position: relative;
+    margin-right: 30px;
+}
+.specialization-list__item:last-child{
+    margin-right: 0;
+}
+
+.specialization-list__description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 0;
+    width: 370px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+/* Стилизация секции наша команда */
+.team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+.team-list{
+    display: flex;
+    width: 270px;
+    
+    text-align: center;
+}
+.team-list__item{
+    padding-bottom: 30px;
+    margin-right: 30px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+     0px 1px 1px rgba(0, 0, 0, 0.14), 
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+.team-list__title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    
+    color: var(--title-text-color);
+
+}
+.team-list__description{
+    margin-top: 0;
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 19px;
+
+
+}
+.social-list{
+    display: flex;
+    justify-content: center;
+}
+.social-list__item{
+    margin-right: 10px;
+}
+.social-list__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #AFB1B8;
+    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__item:last-child{
+    margin-right: 0;
+}
+
+.social-list__icon{
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list__link:hover,
+.social-list__link:focus {
+    
+    background-color: var(--link-hover-color);
+}
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon{
+    fill: #ffffff;
+}
+
+/* Стилтзация секции постоянные клиенты */
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+.client-list{
+    display: flex;
+   
+    
+}
+.client-list__item{
+    margin-right: 30px;
+
+}
+.client-list__item:last-child{
+margin-right: 0;
+}
+.client-list__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 170px;
+     height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-list__icon{
+    fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-list__link:hover {
+    border: 1px solid var(--link-hover-color);
+}
+.client-list__link:hover .client-list__icon{
+    fill: var(--link-hover-color);
+}
 /* Стилизация футера */
 
 .footer{
@@ -186,7 +413,7 @@ ul{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 
-    transition: color 2150ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .footer-contact__link--white{
     color: #ffffff;
@@ -215,34 +442,18 @@ text-transform: uppercase;
 color: #ffffff;
     
 }
-.footer-socials{
-    display: flex;
-}
-.footer-socials__item{
-    display: flex;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.social-list__link--bgc{
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    transition: background-color 2150ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.footer-socials__item:last-child{
-    margin-right: 0;
-}
-.footer-socials__icon{
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-}
-.footer-socials__item:hover{
-    cursor: pointer;
+.social-list__link--bgc:hover{
     background-color: var(--link-hover-color);
 }
+.social-list__icon--fill{
+    fill: #ffffff;
+}
+
 .footer-form__input{
     width: 358px;
     height: 50px;
@@ -257,4 +468,14 @@ color: #ffffff;
 .footer-form{
     padding-top: 12px;
     margin-left: 93px;
+}
+
+/* Стилизация портфолио */
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.menu-list{
+    display: flex;
 }
