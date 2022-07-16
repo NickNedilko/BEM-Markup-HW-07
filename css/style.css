@@ -152,6 +152,7 @@ img{
     color: #ffffff;
 }
 
+
 .hero-button{
    
     min-width: 200px;
@@ -176,6 +177,7 @@ img{
  padding-top: 94px;
  padding-bottom: 94px;
 }
+
 
 .section-title{
     margin-top: 0;
@@ -380,10 +382,12 @@ margin-right: 0;
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-list__link:hover {
+.client-list__link:hover,
+.client-list__link:focus {
     border: 1px solid var(--link-hover-color);
 }
-.client-list__link:hover .client-list__icon{
+.client-list__link:hover .client-list__icon,
+.client-list__link:focus .client-list__icon{
     fill: var(--link-hover-color);
 }
 /* Стилизация футера */
