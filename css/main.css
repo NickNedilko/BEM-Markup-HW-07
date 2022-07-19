@@ -109,13 +109,13 @@ img {
           align-items: center;
 }
 
-.nav {
+.header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.menu-nav {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +124,7 @@ img {
           align-items: center;
   margin-left: 93px;
 }
-.menu-nav__item {
+.menu__item {
   position: relative;
   margin-right: 50px;
   padding: 32px 0;
