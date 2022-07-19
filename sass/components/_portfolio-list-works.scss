@@ -1,0 +1,18 @@
+.list-works{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-works__thumb{
+    position: relative;
+}
+
+.list-works__overlay{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 358px;
+    height: 294px;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
