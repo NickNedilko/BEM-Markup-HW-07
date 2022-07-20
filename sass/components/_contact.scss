@@ -1,7 +1,11 @@
-.menu-contact{
+.header__contact{
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+
+.contact{
+    
 
     &__item{
     position: relative;
@@ -16,15 +20,15 @@
     }
 }
 
-.menu-contact__item:last-child{
+.contact__item:last-child{
     margin-right: 0;
 }
-.menu-contact__icon{
+.contact__icon{
     align-items: baseline;
     margin-right: 10px;
     fill: currentColor;}
 
-.menu-contact__link{
+.contact__link{
     color: #757575;
     padding: 32px 0;
 

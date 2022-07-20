@@ -5,10 +5,17 @@ ul{
 }
 img{
     display: block;
+    
 	
+}
+body{
+    font-family: var(--main-font-family);
+    letter-spacing: 0.03em;
 }
 .link{
     text-decoration: none;
+    color: inherit; 
+    
 }
 
 .visually-hidden {
