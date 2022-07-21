@@ -15,9 +15,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex ();
     text-transform: uppercase;
     margin: 0;
     width: 370px;

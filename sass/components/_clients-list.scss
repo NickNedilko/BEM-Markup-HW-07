@@ -13,16 +13,14 @@
 }
 
 .client-list__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex ();
      width: 170px;
      height: 92px;
     border-radius: 4px;
     border: 1px solid #AFB1B8;
     box-shadow: 0px 4px 4px 0px #00000040;
 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(border);
 
     &:hover, &:focus{
         border: 1px solid var(--link-hover-color); 
@@ -30,7 +28,7 @@
 }
 .client-list__icon{
     fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition (fill);
 
     .client-list__link:hover &,
     .client-list__link:focus &{

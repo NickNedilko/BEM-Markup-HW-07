@@ -1,6 +1,5 @@
 .portfolio__menu-list{
-    display: flex;
-    justify-content: center;
+    @include centeredFlex ();
     margin-bottom: 50px;
 }
 
@@ -13,9 +12,13 @@
 .menu-list__button{
     @extend %button;
     background-color: #F5F4FA;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include transition (color);
+        @include transition (background-color);
+
     
     &:hover{
         background-color: var(--link-hover-color);
