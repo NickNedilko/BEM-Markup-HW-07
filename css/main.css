@@ -608,7 +608,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 32px;
+  padding: 10px 0;
   margin-left: 12px;
   font-weight: 700;
   line-height: 1.88;
